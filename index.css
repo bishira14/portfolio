@@ -1,11 +1,13 @@
 * {
   margin:0 0;
   padding: 0 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family:'Ubuntu', sans-serif;
   background: rgb(40, 44, 52);
+  color:white;
 }
 
 #navbar {
@@ -49,9 +51,9 @@ body {
 
 #welcome-section {
   background-color:rgb(40, 44, 52);
-  min-height: 55vh;
+  min-height: 100vh;
   line-height: 40px;
-  padding-top: 45vh;
+  padding-top: 50vh;
 }
 
 #welcome-section h1 {
@@ -64,8 +66,9 @@ body {
   color: 	#009973;
 }
 #about{
-  padding-top:50px;
   background-color:rgb(33, 36, 44);
+  padding:50px;
+  line-height: 35px;
 }
 #about h2 {
   font-size:25px;
@@ -75,90 +78,46 @@ body {
   color: white;
 }
 #info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:rgb(33, 36, 44);
   padding-top:50px;
   color:white;
-  flex-wrap: wrap;
 }
-.info-details{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-weight:bold;
-  line-height: 25px;
-  color:black;
-  width:200px;
-  height:200px;
-  border-radius:50%;
-  background-color:white;
-  margin: 10px 50px 70px;
-  padding:15px;
-  /* border: 1px solid black; */
-  box-shadow: 2px 2px #009973;
-}
-.icon{
-  font-size: 1.8rem;
-  color:#282c34;
-}
-.details_header{
-  font-size: 11px;
-}
-.details_sub{
-  font-size: 9px;
-}
-
 #projects {
+  display:flex;
+  justify-content:center;
+  align-items: center;
   padding-top: 50px;
   background: white;
+  background-color:rgb(40, 44, 52);
+  flex-wrap: wrap;
 }
-#projects h2{
-  font-size:30px;
+ #projects h2{
+  font-size:25px;
 }
-.projectLabel{
-   width:100%;
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   margin: 15px 0;
-
+.project{
+  display:flex;
+  margin:5px;
 }
-.projectLabel h3{
-  width:100px;
-  background-color: rgb(64, 64, 64);
+.project img{
+  height:50vh;
+  width:30vw;
+}
+.projectInfo{
+  height:50vh;
+  width:70vw;
+  background-color:rgb(22, 24, 29);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 3px;
+  padding:25px;
+  line-height: 23px;
+}
+.project h3{
   padding:5px;
-  border-radius: 7px;
-  color: rgb(255,255,255);
-  text-align: center;
-}
-.project {
-    display: inline-block;
-    margin: 40px 60px;
-    text-decoration:none;
-    color:black;
-    font-weight: bold;
-}
-
-.project-pic {
-  max-width:350px;
-  width:100%;
-  border: 2px solid black;
-}
-
-.project-title {
-  font-size:18px;
-  padding:9px;
-  border: 2px solid black;
-}
-#projects img{
-  height:200px;
-  width:280px;
 }
 
 #contacts {
+  background-color:rgb(33, 36, 44);
   background-color:rgb(40, 44, 52);
   padding-top:50px;
   color:white;
@@ -209,20 +168,6 @@ footer {
 }
 
 @media screen and (max-width:600px){
-
-  #projects {
-  padding-top: 80px;
-
-}
-
-#projects h2{
-  margin-bottom: 20px;
-}
-
-  .project {
-   margin: 15px 0px;
-}
-
   #contacts h2 {
     padding-top:20px;
   }
